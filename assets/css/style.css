@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -522,7 +522,7 @@ section {
 }
 @media (max-width: 768px) {
   .steps .content-item {
-    padding: 40px 0;
+    /*padding: 0px 0;*/
   }
 }
 
