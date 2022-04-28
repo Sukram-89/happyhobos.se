@@ -414,10 +414,10 @@
           method: "GET",
           dataType: "jsonp"
           }).done(function(data) {
-            successful_creation(data)
+            successful_creation(data);
           }).fail(function() {
-            failure_creation()
-          });
+              failure_creation();
+            });
         }
         function successful_creation(the_url){
           document.getElementById('loader').style.display="None"
