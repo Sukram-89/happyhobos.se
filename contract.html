@@ -403,17 +403,19 @@
           start_date = document.getElementById('start_date').value
           console.log("Values: "+fname+" "+persnr+" "+address+" "+post_nr+" "+city+" "+role_title+" "+start_date)
           document.getElementById('loader').style.display="Block"
-          post()
+          post(fname, persnr, address, post_nr, city, role_title, start_date)
         }
-      function post() {
-        url = "https://script.google.com/macros/s/AKfycbz8L-yX2_wtfVnudI4vgImq1fukRhTSoLylIOZDZi47zvHyiZN51ojeBQSQT5Oa_Pl3/exec?username=awesome"
-        const obj = { key: "value" };
-        fetch(url, { method: "POST", body: obj })
-          .then((res) => {
-            console.log(res.status);
-            return res.text();
-          })
-          .then((res) => console.log(res));
+      function post(fname, persnr, address, post_nr, city, role_title, start_date) {
+        url="https://script.google.com/a/macros/happyhobos.se/s/AKfycbwYglClgaoGHMZeNURt6OMrUniX9HUSZa62pLHWfzv4KGbR1eFsAHMFzo89m9NRa_XQ/exec?fname="+fname+"&persnr="+persnr+"&address="+address+"&post_nr="+post_nr+"&city="+city+"&role_title="+role_title+"&start_date="+start_date
+        fetch(url).then(function(response) {
+          return response.json();
+        }).then(function(data) {
+          console.log(data);
+          successful_creation(data)
+        }).catch(function() {
+          console.log("Booo");
+          failure_creation()
+        });
         }
         function successful_creation(the_url){
           document.getElementById('loader').style.display="None"
