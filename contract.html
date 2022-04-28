@@ -1,1 +1,431 @@
-<iframe src="https://script.google.com/a/macros/happyhobos.se/s/AKfycbwD9FbVVi5bXiTDBYTX64ClivuH4LTUc3-gZYJ60Q6dWLwofze47ePzjEjvYO4UPMBh/exec" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Hobos - Create employement contract</title>
+    <style>
+      body {
+        align-items: center;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .form {
+        background-color: #15172b;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 320px;
+      }
+
+      .title {
+        color: #eee;
+        font-family: sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 30px;
+      }
+
+      .subtitle {
+        color: #eee;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      .input-container {
+        height: 50px;
+        position: relative;
+        width: 100%;
+      }
+
+      .ic1 {
+        margin-top: 40px;
+      }
+
+      .ic2 {
+        margin-top: 30px;
+      }
+
+      .input {
+        background-color: #303245;
+        border-radius: 12px;
+        border: 0;
+        box-sizing: border-box;
+        color: #eee;
+        font-size: 18px;
+        height: 100%;
+        outline: 0;
+        padding: 4px 20px 0;
+        width: 100%;
+      }
+
+      .cut {
+        background-color: #15172b;
+        border-radius: 10px;
+        height: 20px;
+        left: 20px;
+        position: absolute;
+        top: -20px;
+        transform: translateY(0);
+        transition: transform 200ms;
+        width: 76px;
+      }
+
+      .cut-short {
+        width: 50px;
+      }
+
+      .input:focus ~ .cut,
+      .input:not(:placeholder-shown) ~ .cut {
+        transform: translateY(8px);
+      }
+
+      .placeholder {
+        color: #65657b;
+        font-family: sans-serif;
+        left: 20px;
+        line-height: 14px;
+        pointer-events: none;
+        position: absolute;
+        transform-origin: 0 50%;
+        transition: transform 200ms, color 200ms;
+        top: 20px;
+      }
+
+      .input:focus ~ .placeholder,
+      .input:not(:placeholder-shown) ~ .placeholder {
+        transform: translateY(-30px) translateX(10px) scale(0.75);
+      }
+
+      .input:not(:placeholder-shown) ~ .placeholder {
+        color: #808097;
+      }
+
+      .input:focus ~ .placeholder {
+        color: #dc2f55;
+      }
+
+      .submit {
+        background-color: #08d;
+        border-radius: 12px;
+        border: 0;
+        box-sizing: border-box;
+        color: #eee;
+        cursor: pointer;
+        font-size: 18px;
+        height: 50px;
+        margin-top: 38px;
+        // outline: 0;
+        text-align: center;
+        width: 100%;
+      }
+
+      .submit:active {
+        background-color: #06b;
+      }
+      @keyframes ldio-jqukpm3eidp {
+        0% { opacity: 1 }
+        100% { opacity: 0 }
+      }
+      .ldio-jqukpm3eidp div {
+        left: 79px;
+        top: 46px;
+        position: absolute;
+        animation: ldio-jqukpm3eidp linear 1s infinite;
+        background: #feb471;
+        width: 42px;
+        height: 28px;
+        border-radius: 13.44px / 13.44px;
+        transform-origin: 21px 54px;
+      }.ldio-jqukpm3eidp div:nth-child(1) {
+        transform: rotate(0deg);
+        animation-delay: -0.9772727272727273s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(2) {
+        transform: rotate(8.181818181818182deg);
+        animation-delay: -0.9545454545454546s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(3) {
+        transform: rotate(16.363636363636363deg);
+        animation-delay: -0.9318181818181818s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(4) {
+        transform: rotate(24.545454545454547deg);
+        animation-delay: -0.9090909090909091s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(5) {
+        transform: rotate(32.72727272727273deg);
+        animation-delay: -0.8863636363636364s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(6) {
+        transform: rotate(40.90909090909091deg);
+        animation-delay: -0.8636363636363636s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(7) {
+        transform: rotate(49.09090909090909deg);
+        animation-delay: -0.8409090909090909s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(8) {
+        transform: rotate(57.27272727272727deg);
+        animation-delay: -0.8181818181818182s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(9) {
+        transform: rotate(65.45454545454545deg);
+        animation-delay: -0.7954545454545454s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(10) {
+        transform: rotate(73.63636363636364deg);
+        animation-delay: -0.7727272727272727s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(11) {
+        transform: rotate(81.81818181818181deg);
+        animation-delay: -0.75s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(12) {
+        transform: rotate(90deg);
+        animation-delay: -0.7272727272727273s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(13) {
+        transform: rotate(98.18181818181819deg);
+        animation-delay: -0.7045454545454546s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(14) {
+        transform: rotate(106.36363636363636deg);
+        animation-delay: -0.6818181818181818s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(15) {
+        transform: rotate(114.54545454545455deg);
+        animation-delay: -0.6590909090909091s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(16) {
+        transform: rotate(122.72727272727273deg);
+        animation-delay: -0.6363636363636364s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(17) {
+        transform: rotate(130.9090909090909deg);
+        animation-delay: -0.6136363636363636s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(18) {
+        transform: rotate(139.0909090909091deg);
+        animation-delay: -0.5909090909090909s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(19) {
+        transform: rotate(147.27272727272728deg);
+        animation-delay: -0.5681818181818182s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(20) {
+        transform: rotate(155.45454545454547deg);
+        animation-delay: -0.5454545454545454s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(21) {
+        transform: rotate(163.63636363636363deg);
+        animation-delay: -0.5227272727272727s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(22) {
+        transform: rotate(171.8181818181818deg);
+        animation-delay: -0.5s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(23) {
+        transform: rotate(180deg);
+        animation-delay: -0.4772727272727273s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(24) {
+        transform: rotate(188.1818181818182deg);
+        animation-delay: -0.45454545454545453s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(25) {
+        transform: rotate(196.36363636363637deg);
+        animation-delay: -0.4318181818181818s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(26) {
+        transform: rotate(204.54545454545453deg);
+        animation-delay: -0.4090909090909091s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(27) {
+        transform: rotate(212.72727272727272deg);
+        animation-delay: -0.38636363636363635s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(28) {
+        transform: rotate(220.9090909090909deg);
+        animation-delay: -0.36363636363636365s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(29) {
+        transform: rotate(229.0909090909091deg);
+        animation-delay: -0.3409090909090909s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(30) {
+        transform: rotate(237.27272727272728deg);
+        animation-delay: -0.3181818181818182s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(31) {
+        transform: rotate(245.45454545454547deg);
+        animation-delay: -0.29545454545454547s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(32) {
+        transform: rotate(253.63636363636363deg);
+        animation-delay: -0.2727272727272727s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(33) {
+        transform: rotate(261.8181818181818deg);
+        animation-delay: -0.25s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(34) {
+        transform: rotate(270deg);
+        animation-delay: -0.22727272727272727s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(35) {
+        transform: rotate(278.1818181818182deg);
+        animation-delay: -0.20454545454545456s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(36) {
+        transform: rotate(286.3636363636364deg);
+        animation-delay: -0.18181818181818182s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(37) {
+        transform: rotate(294.54545454545456deg);
+        animation-delay: -0.1590909090909091s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(38) {
+        transform: rotate(302.72727272727275deg);
+        animation-delay: -0.13636363636363635s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(39) {
+        transform: rotate(310.90909090909093deg);
+        animation-delay: -0.11363636363636363s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(40) {
+        transform: rotate(319.09090909090907deg);
+        animation-delay: -0.09090909090909091s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(41) {
+        transform: rotate(327.27272727272725deg);
+        animation-delay: -0.06818181818181818s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(42) {
+        transform: rotate(335.45454545454544deg);
+        animation-delay: -0.045454545454545456s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(43) {
+        transform: rotate(343.6363636363636deg);
+        animation-delay: -0.022727272727272728s;
+        background: #feb471;
+      }.ldio-jqukpm3eidp div:nth-child(44) {
+        transform: rotate(351.8181818181818deg);
+        animation-delay: 0s;
+        background: #feb471;
+      }
+      .loadingio-spinner-spinner-pnw1f2vnisj {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        overflow: hidden;
+        background: rgba(NaN, NaN, NaN, 0);
+      }
+      .ldio-jqukpm3eidp {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0 0; /* see note above */
+      }
+      .ldio-jqukpm3eidp div { box-sizing: content-box;  }
+      #loader {position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -100px;
+      z-index: 1;
+      display: none;}
+
+    </style>
+    <base target="_top">
+  </head>
+  <body>
+    <div id="loader">
+          <div class="loadingio-spinner-spinner-pnw1f2vnisj"><div class="ldio-jqukpm3eidp">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div></div>
+  </style>
+    </div>
+    <div class="form">
+      <div class="title" id="title">Happy Hobos</div>
+      <div class="subtitle" id="subtitle">Let's create your employee contract!</div>
+        <div id="input_form_for_stuff">
+        <div class="input-container ic1">
+          <input id="fname" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="fname" class="placeholder">Full name</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="persnr" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="persnr" class="placeholder">Personal number</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="address" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="address" class="placeholder">Address</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="post_nr" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="post_nr" class="placeholder">Postal code</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="city" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="city" class="placeholder">City</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="role_title" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="role_title" class="placeholder">Role Title</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="start_date" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="start_date" class="placeholder">Start date</label>
+        </div>
+        <button onclick="click_submit()" type="text" class="submit">Create</button>
+      </div>
+    </div>
+    <script>
+        function click_submit(){
+          fname = document.getElementById('fname').value
+          persnr = document.getElementById('persnr').value
+          address = document.getElementById('address').value
+          post_nr = document.getElementById('post_nr').value
+          city = document.getElementById('city').value
+          role_title = document.getElementById('role_title').value
+          start_date = document.getElementById('start_date').value
+          console.log("Values: "+fname+" "+persnr+" "+address+" "+post_nr+" "+city+" "+role_title+" "+start_date)
+          document.getElementById('loader').style.display="Block"
+          post()
+        }
+      function post() {
+        url = "https://script.google.com/macros/s/AKfycbz8L-yX2_wtfVnudI4vgImq1fukRhTSoLylIOZDZi47zvHyiZN51ojeBQSQT5Oa_Pl3/exec?username=awesome"
+        const obj = { key: "value" };
+        fetch(url, { method: "POST", body: obj })
+          .then((res) => {
+            console.log(res.status);
+            return res.text();
+          })
+          .then((res) => console.log(res));
+        }
+        function successful_creation(the_url){
+          document.getElementById('loader').style.display="None"
+          document.getElementById('input_form_for_stuff').style.display="None"
+          document.getElementById('subtitle').innerHTML = "Thank you for creating a contract. Here's a nice button to it<p> <a href='"+the_url+"'><button id='contract' style='padding-top: 15px;'' class='submit'>Open contract</button></a></p>"
+      
+        }
+        function failure_creation(){
+          document.getElementById('loader').style.display="None"
+          document.getElementById('subtitle').innerHTML = "Something went wrong, please try again or contact Markus Hoff at Happy Hobos"
+        }
+    </script>
+  </body>
+  
+</html>
