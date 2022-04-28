@@ -407,16 +407,17 @@
           post(fname, persnr, address, post_nr, city, role_title, start_date)
         }
       function post(fname, persnr, address, post_nr, city, role_title, start_date) {
-        url="https://script.google.com/a/macros/happyhobos.se/s/AKfycbwYglClgaoGHMZeNURt6OMrUniX9HUSZa62pLHWfzv4KGbR1eFsAHMFzo89m9NRa_XQ/exec?fname="+fname+"&persnr="+persnr+"&address="+address+"&post_nr="+post_nr+"&city="+city+"&role_title="+role_title+"&start_date="+start_date
-        fetch(url).then(function(response) {
-          return response.json();
-        }).then(function(data) {
-          console.log(data);
-          successful_creation(data)
-        }).catch(function() {
-          console.log("Booo");
-          failure_creation()
-        });
+        url="https://script.google.com/a/macros/happyhobos.se/s/AKfycbxNHeAVZy3gwGt3TjREb4Xll_jstmQkBix_ahOCGbNi_-HMixvHz0VPhjZdSxJ7BsC_/exec"
+        jQuery.ajax({
+          crossDomain: true,
+          url: url+"?fname="+fname+"&persnr="+persnr+"&address="+address+"&post_nr="+post_nr+"&city="+city+"&role_title="+role_title+"&start_date="+start_date",
+          method: "GET",
+          dataType: "jsonp"
+          }).done(function(data) {
+            successful_creation(data)
+          }).fail(function() {
+            failure_creation()
+          });
         }
         function successful_creation(the_url){
           document.getElementById('loader').style.display="None"
