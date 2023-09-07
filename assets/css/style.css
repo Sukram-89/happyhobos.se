@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #1bac91;
+  color: #444;
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ i{
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #21cfaf;
+  background: #f2aa78;
   color: #fff;
 }
 .back-to-top.active {
@@ -189,7 +189,7 @@ i{
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -276,7 +276,7 @@ i{
   color: #21413c;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -302,7 +302,7 @@ i{
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -358,8 +358,8 @@ i{
   color: #fff;
 }
 #hero .btn-get-started:hover {
-  border-color: #1bac91;
-  background: #1bac91;
+  border-color: #f7924c;
+  background: #f7924c;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -393,7 +393,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f9f8;
+  background-color: #f8f9f9;
 }
 
 .section-title {
@@ -405,7 +405,7 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: ##f7924c;
+  color: #f7924c;
 }
 .section-title p {
   margin-bottom: 0;
@@ -545,7 +545,7 @@ section {
   color: #21413c;
 }
 .features .nav-link:hover {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .features .nav-link h4 {
   font-size: 18px;
@@ -559,7 +559,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.12);
 }
 .features .nav-link.active h4 {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .features .tab-pane.active {
   -webkit-animation: slide-down 0.5s ease-out;
@@ -693,10 +693,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1bac91;
+  border: 1px solid #f2aa78;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1bac91;
+  background-color: #f2aa78;
 }
 
 /*--------------------------------------------------------------
@@ -728,7 +728,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -856,10 +856,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1bac91;
+  border: 1px solid #f2aa78;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1bac91;
+  background-color: #f2aa78;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -947,7 +947,7 @@ section {
   margin-top: 15px;
 }
 .team .member .social a:hover {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .team .member .social i {
   font-size: 18px;
@@ -1021,7 +1021,7 @@ section {
   color: #343a40;
 }
 .faq .faq-list a.collapsed:hover {
-  color: #1bac91;
+  color: #f2aa78;
 }
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
@@ -1068,7 +1068,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #43857a;
+  color: #686868;
 }
 .contact .info .email p {
   padding-top: 5px;
@@ -1156,7 +1156,7 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #1bac91;
+  background: #f2aa78;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1269,7 +1269,7 @@ section {
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
-  color: #34dfbf;
+  color: #f2aa78;
 }
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
@@ -1292,7 +1292,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1bac91;
+  background: #f2aa78;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
