@@ -158,9 +158,6 @@ i{
   visibility: visible;
   width: 100%;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #CCC;
-}
 .navbar .dropdown ul {
   display: block;
   position: absolute;
